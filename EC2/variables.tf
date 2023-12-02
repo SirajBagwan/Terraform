@@ -1,13 +1,5 @@
-variable "az-a" {
+variable "az" {
   default = "ap-south-1a"
-}
-
-variable "az-b" {
-  default = "ap-south-1b"
-}
-
-variable "az-c" {
-  default = "ap-south-1c"
 }
 
 variable "aws_ami_id" {
