@@ -10,10 +10,6 @@ variable "access_key" {
   default = "newkey"
 }
 
-variable "secondary_ip" {
-  default = "10.0.0.7"
-}
-
 variable "Instance_Type" {
   default = "t2.micro"
 }
