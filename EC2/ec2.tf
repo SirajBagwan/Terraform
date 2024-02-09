@@ -24,9 +24,7 @@ resource "aws_instance" "web" {
   key_name                    = var.access_key
   user_data                   = <<-EOF
                                   #!/bin/bash
-                                  apt-get update -y
-                                  apt-get apache2 -y
-                                  echo "Hello From $(hostname -f)" > /var/www/html/index.html
+                                  apt update -y
                                   EOF
   root_block_device {
     volume_size           = var.RTD_Size
